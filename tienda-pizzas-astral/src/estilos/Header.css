@@ -1,0 +1,15 @@
+
+
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+.contenedor-horario {
+    background-color: rgb(206, 206, 206);
+    padding: 2px;
+}
+.contenedor-horario p{
+    font-size: 25px;
+    text-align: center;font-weight: bold;
+}

@@ -1,0 +1,134 @@
+.carrito {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Título del carrito */
+.carrito h2 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Lista de productos */
+.carrito ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.carrito li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+}
+
+.carrito li:last-child {
+  border-bottom: none;
+}
+
+/* Botón de eliminar */
+.carrito button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carrito button:hover {
+  background-color: #ff4b4b;
+}
+
+/* Total */
+.carrito .total-text {
+  text-align: right;
+  font-size: 20px;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Formulario para datos del cliente */
+.formulario {
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.formulario label {
+  display: block;
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="number"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px; 
+  font-size: 16px;
+}
+
+.formulario input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Botón Generar PDF */
+
+
+
+.formulario button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 230px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;  
+}
+
+.formulario button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para los métodos de pago */
+.texto-pago{
+  text-align: left;
+}
+
+.metodos-pago {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.metodos-pago label {
+  font-size: 16px;
+  color: #333;
+}
+
+.metodos-pago input[type="radio"] {
+  margin-right: 5px;
+}

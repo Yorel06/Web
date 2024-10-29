@@ -1,0 +1,144 @@
+.contenedor-nosotros {
+    padding-top: 50px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .contenedor-titulos {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contenedor-titulos h1 {
+    margin: 10px 0;
+    font-size: 2.2rem;
+  }
+  
+  .contenedor-slogan {
+    display: flex;
+    align-items: center;
+    margin: 40px;
+    flex-wrap: wrap;
+    
+  }
+  
+  .contenedor-slogan img {
+    width: 500px;
+    height: 300px;
+    margin-right: 20px;
+  }
+  
+  .contenedor-slogan p {
+    width: 50%;
+    text-align: left;
+    font-size: 1.4rem;
+  }
+  
+  .contenedor-fila {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .contenedor-valores,
+  .contenedor-historia {
+    width: 48%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contenedor-valores img,
+  .contenedor-historia img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .contenedor-valores h3,
+  .contenedor-historia h3 {
+    margin: 15px 0;
+    font-size: 1.8rem;
+  }
+  
+  .contenedor-valores p,
+  .contenedor-historia p {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .contenedor-valores .horno {
+    width: 500px;
+    max-width: 500px;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+
+  .contenedor-historia .horno {
+    width: 500px;
+    max-width: 500px;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos responsive para dispositivos móviles */
+  @media (max-width: 768px) {
+    .contenedor-slogan {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .contenedor-slogan img,
+    .contenedor-slogan p {
+      width: 100%;
+      margin: 0;
+    }
+  
+    .contenedor-slogan img {
+      margin-bottom: 20px;
+    }
+  
+    .contenedor-fila {
+      flex-direction: column;
+    }
+  
+    .contenedor-valores,
+    .contenedor-historia {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  
+    .contenedor-valores h3,
+    .contenedor-historia h3 {
+      font-size: 1.5rem;
+    }
+  
+    .contenedor-valores p,
+    .contenedor-historia p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contenedor-titulos h1 {
+      font-size: 1.8rem;
+    }
+  
+    .contenedor-titulos h3 {
+      font-size: 1.2rem;
+    }
+  
+    .contenedor-slogan p {
+      font-size: 1rem;
+    }
+  
+    .contenedor-valores h3,
+    .contenedor-historia h3 {
+      font-size: 1.2rem;
+    }
+  
+    .contenedor-valores p,
+    .contenedor-historia p {
+      font-size: 0.9rem;
+    }
+  }

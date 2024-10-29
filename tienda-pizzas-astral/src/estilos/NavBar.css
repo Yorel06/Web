@@ -1,0 +1,164 @@
+
+.contenedor-textos{
+    display: flex;    
+    justify-content: center;
+    background-color: rgb(7, 0, 36);
+    color:  white; 
+    position: fixed;
+    width: 100%;    
+}
+
+.link-wasap {
+    list-style: none;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.contenedor-textos img{
+    width: 25px;
+    height: 25px;
+    padding: 15px;
+}
+
+.contenedor-wasap{
+    padding-right: 60px;
+}
+.contenedor-numero{
+    padding-right: 60px;
+}
+
+.contenedor-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-top: 70px;
+}
+
+.contenedor-menu ul{
+    display: flex;
+    flex-wrap: wrap;    
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+.contenedor-menu li .link-menu {
+    font-size: 25px;
+    text-decoration: none;
+    padding: 0 15px;
+    color: black;
+    font-weight: bold;
+    position: relative;
+}
+
+.contenedor-menu .link-menu:after{
+    content: "";
+    width: 0;
+    height: 5px;
+    background-color: blue;
+    position: absolute;
+    bottom: -10;
+    right: 50%;
+    transition: all .5s;
+    will-change: width;
+}
+
+.contenedor-menu .link-menu:hover:after{
+    width: 100%;
+    right: 0;
+}
+
+.contenedor-menu li .link-menu:hover{
+    color: blue;
+}
+
+
+.icono-logo{  
+    width: 50px;
+    height: 50px;
+}
+.icono-carrito{   
+    width: 35px;
+    height: 35px;
+}
+
+.div-buscar{
+    padding-left: 40px;
+}
+
+.div-buscar input {
+    padding: 10px;
+    background: transparent;
+    border-radius: 30px;
+    border: 1px solid;
+    outline: 0;
+    color: #000000;
+    font-size: 14px;
+    max-width: 200px;    
+  }
+
+  /* Responsive Styles */
+@media (max-width: 768px) {
+    .contenedor-menu {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .contenedor-menu ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .contenedor-menu li {
+        margin: 10px 0;
+    }
+
+    .contenedor-menu li .link-menu {
+        font-size: 16px;
+    }
+
+    .icono-carrito {
+        padding-left: 0;
+    }
+
+    .div-buscar {
+        padding: 10px 0;
+    }
+
+    .div-buscar input {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor-menu {
+        padding: 10px;
+    }
+
+    .contenedor-menu ul {
+        align-items: center;
+    }
+
+    .contenedor-menu li .link-menu {
+        font-size: 14px;
+    }
+
+    .icono-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .icono-carrito {
+        width: 30px;
+        height: 30px;
+    }
+
+    .div-buscar input {
+        font-size: 12px;
+        padding: 8px;
+    }
+}

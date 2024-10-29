@@ -1,0 +1,93 @@
+.titulo-promo {
+    padding-left: 30px;
+    padding-top: 40px;
+    font-family: "roboto", sans-serif;
+    text-align: center;
+  }
+  
+  .menu-cards-promo {
+    font-family: "Segoe UI", sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas por defecto */
+    gap: 20px;
+    place-items: center;
+    padding: 0 10px;
+  }
+  
+  .menu-card-promo {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    margin: 15px;
+    width: 290px;
+    max-height: 550px;
+    text-align: center;   
+  }
+  
+  .menu-card-promo:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);    
+  }
+  
+  .menu-name-promo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 10px;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .menu-card-promo img {
+    max-width: 100%;
+    max-height: 300px;
+  }
+  
+  .menu-about-promo button {
+    background-color: #003bdf;
+    color: white;
+    margin: 15px 10px;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.2s;
+  }
+  
+  .menu-about-promo button:hover {
+    background-color: #0c5338;
+    transform: scale(1.05);
+  }
+  
+  /* Media Queries para hacerlo responsive */
+  @media (max-width: 1200px) {
+    .menu-cards-promo {
+      grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas medianas */
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .menu-cards-promo {
+      grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas más pequeñas */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .menu-cards-promo {
+      grid-template-columns: repeat(1, 1fr); /* 1 columna en pantallas móviles */
+    }
+  
+    .menu-card-promo {
+      width: 100%; /* Ocupa todo el ancho disponible */
+      margin: 10px;
+    }
+  
+    .menu-about-promo button {
+      padding: 10px 20px;
+      font-size: 12px;
+    }
+  }
